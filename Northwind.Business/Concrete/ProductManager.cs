@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity.Infrastructure;
+using Northwind.Business.ValidationRules.FluentValidation;
 
 namespace Northwind.Business.Concrete
 {
@@ -23,6 +24,7 @@ namespace Northwind.Business.Concrete
 
         public void Add(Product product)
         {
+          
             _productDal.Add(product);
         }
 
